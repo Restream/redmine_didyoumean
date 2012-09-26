@@ -1,10 +1,3 @@
-<div style="display: none;">
-  <div id="similar_issues">
-    <b><%= l(:dym_similar_issues_caption) %> (<span id="issues_count">&nbsp;</span>)</b>
-    <ul id="similar_issues_list"></ul>
-  </div>
-</div>
-
 <% content_for :header_tags do %>
   <%= stylesheet_link_tag 'didyoumean', :plugin => 'redmine_didyoumean' %>
   <%= javascript_include_tag 'didyoumean', :plugin => 'redmine_didyoumean' %>
@@ -17,6 +10,9 @@
     issue_url: "<%= url_for(Issue.new) %>",
     search_url: "<%= url_for(:action => 'index', :controller => 'search_issues', :format => 'json') %>"
   };
-</script>
 
-<%= javascript_tag "observeIssueSubjectField('#{@project.id}','#{issues_didyoumean_event_type}');" %>
+  $('issue_subject').up().insert({after: '<%= escape_javascript(render('similar_issues')) %>'});
+
+  observeIssueSubjectField("<%= @project.id %>",
+    "<%= issues_didyoumean_event_type %>");
+</script>
