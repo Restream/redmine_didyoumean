@@ -21,5 +21,4 @@ end
 
 ActionDispatch::Callbacks.to_prepare do
   require 'redmine_didyoumean/hooks/didyoumean_hooks'
-  require 'redmine_didyoumean/patches/issues_controller_patch'
 end
