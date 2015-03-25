@@ -1,9 +1,9 @@
 require 'redmine'
 
 Redmine::Plugin.register :redmine_didyoumean do
-  name 'Did You Mean?'
+  name 'Redmine Did-You-Mean Plugin'
   author 'Alessandro Bahgat and Mattia Tommasone'
-  description 'A plugin to search for duplicate issues before opening them.'
+  description 'This plugin searches for duplicate issues before adding a new issue.'
   version '1.2.2'
   url 'http://www.github.com/abahgat/redmine_didyoumean'
   author_url 'http://abahgat.com/'
