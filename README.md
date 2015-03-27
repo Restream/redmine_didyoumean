@@ -1,4 +1,4 @@
-Redmine Did-You-Mean Plugin
+# Redmine Did-You-Mean Plugin
 
 [![Build Status](https://travis-ci.org/Undev/redmine_didyoumean.png)](https://travis-ci.org/Undev/redmine_didyoumean)
 [![Code Climate](https://codeclimate.com/github/Undev/redmine_didyoumean.png)](https://codeclimate.com/github/Undev/redmine_didyoumean)
