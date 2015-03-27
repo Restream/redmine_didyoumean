@@ -1,7 +1,7 @@
 Redmine Did-You-Mean Plugin
 
-{<img src="https://travis-ci.org/Undev/redmine_didyoumean.png" />}[https://travis-ci.org/Undev/redmine_didyoumean]
-{<img src="https://codeclimate.com/github/Undev/redmine_didyoumean.png" />}[https://codeclimate.com/github/Undev/redmine_didyoumean]
+[![Build Status](https://travis-ci.org/Undev/redmine_didyoumean.png)](https://travis-ci.org/Undev/redmine_didyoumean)
+[![Code Climate](https://codeclimate.com/github/Undev/redmine_didyoumean.png)](https://codeclimate.com/github/Undev/redmine_didyoumean)
 
 This plugin searches for possible duplicates when users are about to create a new issue.
 
