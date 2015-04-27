@@ -24,7 +24,12 @@ The initial authors are [Alessandro Bahgat](http://blog.abahgat.com/) and [Matti
       
             git clone https://github.com/Undev/redmine_didyoumean.git plugins/redmine_didyoumean
             
-2. Restart Redmine.
+2. Update the Gemfile.lock file by running the following commands:  
+
+         rm Gemfile.lock  
+         bundle install
+            
+3. Restart Redmine.
 
 Now you should be able to see the plugin in **Administration > Plugins**.
 
