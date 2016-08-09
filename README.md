@@ -1,7 +1,7 @@
 # Redmine Did-You-Mean Plugin
 
-[![Build Status](https://travis-ci.org/Undev/redmine_didyoumean.png)](https://travis-ci.org/Undev/redmine_didyoumean)
-[![Code Climate](https://codeclimate.com/github/Undev/redmine_didyoumean.png)](https://codeclimate.com/github/Undev/redmine_didyoumean)
+[![Build Status](https://travis-ci.org/Restream/redmine_didyoumean.svg?branch=master)](https://travis-ci.org/Restream/redmine_didyoumean)
+[![Code Climate](https://codeclimate.com/github/Restream/redmine_didyoumean/badges/gpa.svg)](https://codeclimate.com/github/Restream/redmine_didyoumean)
 
 This plugin searches for possible duplicates when users are about to create a new issue.
 
@@ -22,24 +22,19 @@ The initial authors are [Alessandro Bahgat](http://blog.abahgat.com/) and [Matti
             
       Copy the plugin from GitHub using the following commands:
       
-            git clone https://github.com/Undev/redmine_didyoumean.git plugins/redmine_didyoumean
-            
-2. Update the Gemfile.lock file by running the following commands:  
-
-         rm Gemfile.lock  
-         bundle install
-            
-3. Restart Redmine.
+            git clone https://github.com/Restream/redmine_didyoumean.git plugins/redmine_didyoumean
+                        
+2. Restart Redmine.
 
 Now you should be able to see the plugin in **Administration > Plugins**.
 
 ## Usage
 
 To configure the plugin settings, go to **Administration > Plugins** and click **Configure**.  
-![plugin settings](didyoumean_1.PNG)
+![plugin settings](doc/didyoumean_1.PNG)
 
 The plugin shows the possible duplicate issues under the **Subject field**:
-![similar issues](didyoumean_2.PNG)
+![similar issues](doc/didyoumean_2.PNG)
 
 ## License
 

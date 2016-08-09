@@ -1,24 +1,20 @@
-require 'redmine'
-
 Redmine::Plugin.register :redmine_didyoumean do
   name 'Redmine Did-You-Mean Plugin'
   author 'Alessandro Bahgat and Mattia Tommasone'
   description 'This plugin searches for duplicate issues before adding a new issue.'
-  version '1.2.2'
+  version '1.2.3'
   url 'http://www.github.com/abahgat/redmine_didyoumean'
   author_url 'http://abahgat.com/'
 
   default_settings = {
-    'show_only_open' => '1',
-    'project_filter' => '1',
-    'min_word_length' => '2',
-    'limit' => '5',
+    'show_only_open'    => '1',
+    'project_filter'    => '1',
+    'min_word_length'   => '2',
+    'limit'             => '5',
     'start_search_when' => '0'
   }
 
-  settings(:default => default_settings, :partial => 'settings/didyoumean_settings')
+  settings(default: default_settings, partial: 'settings/didyoumean_settings')
 end
 
-ActionDispatch::Callbacks.to_prepare do
-  require 'redmine_didyoumean/hooks/didyoumean_hooks'
-end
+require 'redmine_didyoumean'
