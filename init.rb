@@ -2,7 +2,7 @@ Redmine::Plugin.register :redmine_didyoumean do
   name 'Redmine Did-You-Mean Plugin'
   author 'Alessandro Bahgat and Mattia Tommasone'
   description 'This plugin searches for duplicate issues before adding a new issue.'
-  version '1.2.3'
+  version '1.2.4'
   url 'http://www.github.com/abahgat/redmine_didyoumean'
   author_url 'http://abahgat.com/'
 
